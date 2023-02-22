@@ -6,5 +6,12 @@ const prezzoKm = 0.21
 const etaUtente = document.getElementById(eta);
 const kmUtente = document.getElementById(distanza);
 
+
 console.log(etaUtente);
 console.log(kmUtente);
+
+// const etaUtente = prompt('anni');
+// const kmUtente = prompt('eta');
+
+
+
