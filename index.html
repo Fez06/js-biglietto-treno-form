@@ -8,8 +8,8 @@
 </head>
 <body>
     <main>
-
-        
+        <!-- in questo div c'e' l'aborto del primo tentativo precorrezione -->
+        <!-- <div>
             <label for="eta"></label>
             <input type="text" id="eta" placeholder="scrivi l'eta'">
 
@@ -17,7 +17,29 @@
             <input type="text" id="distanza" placeholder="scrivi quanti km devi fare">
 
             <button id="start-btn" type="submit">genera</button>
-        
+        </div> -->
+
+        <!-- da qui il nuovo tentativo post-correzione -->
+
+        <div>
+            <label for="name">nome e cognome</label>
+            <input type="text" id="name">
+
+            <label for="km">km da percorrere</label>
+            <input type="number" id="km">
+
+            <label for="eta">Eta'</label>
+            <select id="eta">
+                <option value="under">minorenne</option>
+                <option value="adult">maggiorenne</option>
+                <option value="over">over 65</option>
+            </select>
+        </div>      
+
+        <div>
+            <button id="genera">genera</button>
+            <button id="btnReset">reset</button>
+        </div>
 
     </main>
     
