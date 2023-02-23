@@ -28,6 +28,13 @@ const reset = document.getElementById('btnReset');
 
 //console.log(userName, userKm, userAge);
 
+//variabili del biglietto
+
+const textName = document.getElementById('owner-name');
+const textOffer = document.getElementById('offerta-biglietto');
+const textCost = document.getElementById('costo-biglietto');
+const ticket = document.querySelector('.ticket');
+
 //qui inizial
 
 btnStart.addEventListener ('click',
@@ -49,6 +56,14 @@ function(){
 
     ticketPrice = ticketPrice.toFixed(2);
     console.log(ticketPrice);
+
+    //sezione di scrittura dati su biglietto
+
+    textName.innerHTML = inputName;
+    textOffer.innerHTML = inputAge;
+    textCost.innerHTML = ticketPrice +'$';
+
+    ticket.classList.add('show');
 });
 
 
@@ -57,5 +72,7 @@ function(){
     userName.value = '';
     userKm.value = '';
     userAge.value = '';
-})
+
+    ticket.classList.remove('show');
+});
 

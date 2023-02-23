@@ -4,3 +4,53 @@
     box-sizing: border-box;
 }
 
+main {
+    background-color: blueviolet;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+}
+
+.module {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    background-color: antiquewhite;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.ticket {
+    height: 50%;
+    width: 80%;
+    background-color: azure;
+    margin: auto;
+    padding: 15px;
+    display: none;
+}
+
+.ticket > h3 {
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+
