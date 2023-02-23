@@ -32,7 +32,7 @@ const btnStart = document.getElementById('genera');
 btnStart.addEventListener ('click',
 function(){
     const inputName = userName.value;
-    const inputKm = number(userKm.value);
+    const inputKm = Number(userKm.value);
     const inputAge = userAge.value;
     console.log(inputName, inputKm, inputAge);
 
