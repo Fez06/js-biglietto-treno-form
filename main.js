@@ -24,6 +24,7 @@ const userName = document.getElementById('name');
 const userKm = document.getElementById('km');
 const userAge = document.getElementById('eta');
 const btnStart = document.getElementById('genera');
+const reset = document.getElementById('btnReset');
 
 //console.log(userName, userKm, userAge);
 
@@ -34,7 +35,7 @@ function(){
     const inputName = userName.value;
     const inputKm = Number(userKm.value);
     const inputAge = userAge.value;
-    console.log(inputName, inputKm, inputAge);
+    //console.log(inputName, inputKm, inputAge);
 
     let ticketPrice = inputKm * 0.21;
 
@@ -50,4 +51,11 @@ function(){
     console.log(ticketPrice);
 });
 
+
+reset.addEventListener ('click',
+function(){
+    userName.value = '';
+    userKm.value = '';
+    userAge.value = '';
+})
 
